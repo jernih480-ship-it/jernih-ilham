@@ -1,0 +1,129 @@
+
+/* Pengaturan dasar */
+:root {
+  --hijau: #174b36;
+  --hijau-muda: #267653;
+  --kuning: #ffc857;
+  --putih: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #24332b;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: var(--hijau);
+}
+
+.navbar-brand span {
+  color: var(--kuning);
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  margin-left: 10px;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: var(--kuning);
+}
+
+/* Hero */
+.hero {
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(90deg,
+      rgba(10, 35, 24, 0.88),
+      rgba(10, 35, 24, 0.25)),
+    url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+}
+
+.hero-content {
+  max-width: 650px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  max-width: 530px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* Bagian destinasi */
+.section-label {
+  color: var(--hijau-muda);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.destination-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.destination-card img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.destination-card .card-body {
+  padding: 24px;
+}
+
+.btn-success {
+  background-color: var(--hijau);
+  border-color: var(--hijau);
+}
+
+.btn-success:hover {
+  background-color: var(--hijau-muda);
+  border-color: var(--hijau-muda);
+}
+
+/* Footer */
+.footer-custom {
+  background-color: var(--hijau);
+  color: white;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 470px;
+  }
+
+  .hero-content {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .destination-card img {
+    height: 210px;
+  }
+}

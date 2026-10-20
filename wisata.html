@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinasi Wisata | Jelajah Indonesia</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        Jelajah<span>Indonesia.</span>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="wisata.html">Destinasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tentang.html">Tentang</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-warning rounded-pill px-4"
+               href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Judul halaman -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <p class="section-label">PESONA NUSANTARA</p>
+      <h1 class="fw-bold">Destinasi Wisata Indonesia</h1>
+      <p class="text-secondary">
+        Temukan tempat menarik untuk petualangan berikutnya.
+      </p>
+    </div>
+  </section>
+
+  <!-- Daftar wisata -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Bali -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card destination-card h-100">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                 class="card-img-top" alt="Wisata Bali">
+            <div class="card-body">
+              <p class="text-success small fw-bold">BALI</p>
+              <h5 class="fw-bold">Pulau Dewata</h5>
+              <p class="text-secondary">
+                Pulau dengan pantai indah, budaya unik, dan panorama alam.
+              </p>
+              <a href="detail.html" class="btn btn-success rounded-pill">
+                Lihat Detail
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Borobudur -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card destination-card h-100">
+            <img src="https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=900&q=80"
+                 class="card-img-top" alt="Candi Borobudur">
+            <div class="card-body">
+              <p class="text-success small fw-bold">JAWA TENGAH</p>
+              <h5 class="fw-bold">Candi Borobudur</h5>
+              <p class="text-secondary">
+                Destinasi bersejarah dengan arsitektur yang mengagumkan.
+              </p>
+              <a href="detail.html?wisata=borobudur"
+                 class="btn btn-success rounded-pill">
+                Lihat Detail
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Raja Ampat -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card destination-card h-100">
+            <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=900&q=80"
+                 class="card-img-top" alt="Wisata laut Indonesia">
+            <div class="card-body">
+              <p class="text-success small fw-bold">PAPUA BARAT DAYA</p>
+              <h5 class="fw-bold">Raja Ampat</h5>
+              <p class="text-secondary">
+                Gugusan pulau yang terkenal dengan keindahan lautnya.
+              </p>
+              <a href="detail.html?wisata=raja-ampat"
+                 class="btn btn-success rounded-pill">
+                Lihat Detail
+            </a>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gunung Bromo -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card destination-card h-100">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                 class="card-img-top" alt="Pemandangan alam">
+            <div class="card-body">
+              <p class="text-success small fw-bold">JAWA TIMUR</p>
+              <h5 class="fw-bold">Gunung Bromo</h5>
+              <p class="text-secondary">
+                Nikmati suasana pegunungan dan pemandangan matahari terbit.
+              </p>
+               <a href="detail.html?wisata=gunung-bromo"
+                 class="btn btn-success rounded-pill">
+                Lihat Detail
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Danau Toba -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card destination-card h-100">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80"
+                 class="card-img-top" alt="Pemandangan danau dan pegunungan">
+            <div class="card-body">
+              <p class="text-success small fw-bold">SUMATERA UTARA</p>
+              <h5 class="fw-bold">Danau Toba</h5>
+              <p class="text-secondary">
+                Danau luas dengan panorama perbukitan yang menenangkan.
+              </p>
+               <a href="detail.html?wisata=danau-toba"
+                 class="btn btn-success rounded-pill">
+                Lihat Detail
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Labuan Bajo -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card destination-card h-100">
+            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=80"
+                 class="card-img-top" alt="Pantai tropis">
+            <div class="card-body">
+              <p class="text-success small fw-bold">NUSA TENGGARA TIMUR</p>
+              <h5 class="fw-bold">Labuan Bajo</h5>
+              <p class="text-secondary">
+                Gerbang menuju pulau-pulau eksotis dan petualangan laut.
+              </p>
+               <a href="detail.html?wisata=labuan-bajo"
+                 class="btn btn-success rounded-pill">
+                Lihat Detail
+            </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom py-4">
+    <div class="container text-center">
+      <p class="fw-bold mb-1">Jelajah Indonesia</p>
+      <p class="small mb-0">
+        © 2026 Jelajah Indonesia | Proyek UTS
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
